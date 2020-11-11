@@ -1,0 +1,18 @@
+<html>
+   <body>
+      <h1>Enter Key value pair of metadata for searching images</h1>
+      <form action = "{{ url_for('get_gallery') }}" method = "POST"
+         enctype = "multipart/form-data">
+		 <input type = "text" name = "key1" placeholder="Key 1">  <input type = "text" name = "value1" placeholder="Value 1"> 
+		 <br>
+		 <input type = "text" name = "key2" placeholder="Key 2">  <input type = "text" name = "value2" placeholder="Value 2"> 
+		 <br>
+		 <input type = "text" name = "key3" placeholder="Key 3">  <input type = "text" name = "value3" placeholder="Value 3"> 
+		 <br>
+		 <input type = "text" name = "key4" placeholder="Key 4">  <input type = "text" name = "value4" placeholder="Value 4"> 
+		 <br> <br>
+         <input type = "submit"/>
+   </form>
+
+   </body>
+</html>
