@@ -102,12 +102,12 @@ def get_gallery():
     
     key1 = request.form.get("key1")
     key2 = request.form.get("key2")
-    key3 = request.form.get("key3")
-    key4 = request.form.get("key4")
+    # key3 = request.form.get("key3")
+    # key4 = request.form.get("key4")
     value1 = request.form.get("value1")
     value2 = request.form.get("value2")
-    value3 = request.form.get("value3")
-    value4 = request.form.get("value4")
+    # value3 = request.form.get("value3")
+    # value4 = request.form.get("value4")
     key_value_pairs={}
     
     if(key1 != "" and value1 != ""):
@@ -115,12 +115,16 @@ def get_gallery():
     
     if(key2 != "" and value2 != ""):
         key_value_pairs[key2] = value2
+
+    print(key1,value1)
+    print(key2,value2)
+
     
-    if(key3 != "" and value3 != ""):
-        key_value_pairs[key3] = value3
+    # if(key3 != "" and value3 != ""):
+    #     key_value_pairs[key3] = value3
     
-    if(key4 != "" and value4 != ""):
-        key_value_pairs[key4] = value4
+    # if(key4 != "" and value4 != ""):
+    #     key_value_pairs[key4] = value4
 
     results = list(mongo.db.metadata.find(key_value_pairs))
     image_names = []
