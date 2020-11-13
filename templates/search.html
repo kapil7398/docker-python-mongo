@@ -1,0 +1,16 @@
+<html>
+   <body>
+      <h1>Enter Key value pair of metadata for searching images</h1>
+      <form action = "{{ url_for('get_gallery') }}" method = "POST"
+         enctype = "multipart/form-data">
+		<label>Key: </label> <select name = "key1"><option>Make</option></select>
+		<label>Value: </label> <select name = "value1"><option>SAMSUNG</option> <option>HUAWEI</option> <option>OnePlus</option> <option>Xiaomi</option><option>motorola</option> </select>
+		 <br>
+		 <label>Key: </label> <select name = "key2"><option>Model</option></select>
+			<label>Value: </label> <select name = "value2"><option>SM-E500H</option> <option>LLD-AL10</option> <option>ONEPLUS A5000</option> <option>Redmi 4</option><option>Moto G (5) Plus</option> </select>
+		 <br> <br>
+         <input type = "submit"/>
+   </form>
+
+   </body>
+</html>
